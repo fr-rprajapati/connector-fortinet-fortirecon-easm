@@ -9,5 +9,4 @@
   - Update Domain status to False Positive
   - Update Sub-Domain status to False Positive
   - Update Leaked Credential status
-
-- Updated/fixed output schemas of get_domains, get_breaches_by_id.
+- Updated/fixed output schemas of `Get Domains`, `Get Breaches by ID` actions.
