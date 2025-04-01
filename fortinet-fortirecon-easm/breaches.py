@@ -12,9 +12,6 @@ from datetime import datetime
 
 def get_breaches(config, params):
     endpoint = "/easm/{org_id}/breaches"
-    has_password = params.get("has_password")
-    if isinstance(has_password, bool):
-        params["has_password"] = "true" if has_password else "false"
 
     return get_multiple_records(config=config, endpoint=endpoint, params=params)
 
