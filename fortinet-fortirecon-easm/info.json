@@ -4129,7 +4129,7 @@
           "editable": true,
           "required": true,
           "tooltip": "Specify the status to update the Task.",
-          "description": "Specify the status to update the Leaked Credential. You can choose from pending, failed, completed.",
+          "description": "Specify the status to update the task. You can choose from pending, failed, completed.",
           "options": [
             "completed",
             "pending",
