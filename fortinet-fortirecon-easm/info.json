@@ -4056,7 +4056,7 @@
       "description": "Create task",
       "category": "investigation",
       "is_config_required": true,
-      "visible": true,
+      "visible": false,
       "enabled": true,
       "output_schema": {
         "id": "",
@@ -4105,7 +4105,7 @@
       "description": "Update task",
       "category": "investigation",
       "is_config_required": true,
-      "visible": true,
+      "visible": false,
       "enabled": true,
       "output_schema": {
         "status": ""
@@ -4116,7 +4116,7 @@
           "title": "Task ID",
           "type": "text",
           "editable": true,
-          "visible": true,
+          "visible": false,
           "required": true,
           "description": "Specify the task ID to update the status.",
           "tooltip": "Specify the task ID to update the status."
@@ -4125,7 +4125,7 @@
           "title": "Status",
           "name": "status",
           "type": "select",
-          "visible": true,
+          "visible": false,
           "editable": true,
           "required": true,
           "tooltip": "Specify the status to update the Task.",
