@@ -15,7 +15,6 @@ def create_task(config, params):
     MK = MakeRestApiCall(config=config)
     endpoint = "/security-orchestration/{org_id}/tasks"
     payload = MK.build_payload(params)
-    print(payload)
 
     response = MK.make_request(endpoint=endpoint, method="POST", params=payload)
     return response
