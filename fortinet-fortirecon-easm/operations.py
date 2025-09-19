@@ -11,6 +11,8 @@ from .issues import *
 from .assets import *
 from .breaches import get_breaches, get_breaches_by_id, get_leaked_credentials, update_leaked_credential_status
 from .reports import generate_report, get_report
+from .task import create_task, update_task
+
 
 operations = {
     "get_leaked_credentials": get_leaked_credentials,
@@ -53,5 +55,7 @@ operations = {
     "update_ip_asset_status_to_false_positive": update_ip_asset_status_to_false_positive,
     "update_domain_asset_status_to_false_positive": update_domain_asset_status_to_false_positive,
     "update_subdomain_asset_status_to_false_positive": update_subdomain_asset_status_to_false_positive,
-    "update_leaked_credential_status": update_leaked_credential_status
+    "update_leaked_credential_status": update_leaked_credential_status,
+    "create_task": create_task,
+    "update_task": update_task
 }
