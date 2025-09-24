@@ -320,7 +320,9 @@
             "status": "",
             "user_name": "",
             "issue_name_identifier": "",
-            "bucket_id": ""
+            "bucket_id": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -509,6 +511,28 @@
           ]
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -688,6 +712,8 @@
                 "name": ""
               }
             ],
+            "created_ts": "",
+            "modified_ts": "",
             "user_name": ""
           }
         ],
@@ -781,6 +807,28 @@
           "placeholder": "",
           "tooltip": "Specify the group ID to filter retrieved results. You can specify multiple group IDs as comma-separated values. It returns results if it matches all of the specified groups, operating as an 'AND filter'.",
           "description": "(Optional) Specify the group ID to filter retrieved results. You can specify multiple group IDs as comma-separated values. It returns results if it matches all of the specified groups, operating as an 'AND filter'."
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3013,7 +3061,9 @@
             "service_banner": "",
             "ssl": {},
             "subdomains": [],
-            "version": ""
+            "version": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3101,6 +3151,28 @@
             "True",
             "False"
           ]
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3973,6 +4045,95 @@
           "options": [
             "ACTIVE",
             "RESOLVED"
+          ]
+        }
+      ]
+    },
+    {
+      "operation": "create_task",
+      "title": "Create Task",
+      "annotation": "create_task",
+      "description": "Create task",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": false,
+      "enabled": true,
+      "output_schema": {
+        "id": "",
+        "message": ""
+      },
+      "parameters": [
+        {
+          "title": "Requester",
+          "name": "requester",
+          "type": "text",
+          "visible": false,
+          "editable": true,
+          "required": false,
+          "placeholder": "",
+          "tooltip": "Requestor actor user",
+          "description": "Requestor actor."
+        },
+        {
+          "title": "Request",
+          "name": "request",
+          "type": "text",
+          "visible": false,
+          "editable": true,
+          "required": false,
+          "placeholder": "",
+          "tooltip": "Request message.",
+          "description": "Request message."
+        },
+        {
+          "title": "Task ID",
+          "name": "taskId",
+          "type": "text",
+          "visible": false,
+          "editable": true,
+          "required": false,
+          "placeholder": "",
+          "tooltip": "Task ID",
+          "description": "Task ID."
+        }
+      ]
+    },
+    {
+      "operation": "update_task",
+      "title": "Update task",
+      "annotation": "update_task",
+      "description": "Update task",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": false,
+      "enabled": true,
+      "output_schema": {
+        "status": ""
+      },
+      "parameters": [
+        {
+          "name": "task_id",
+          "title": "Task ID",
+          "type": "text",
+          "editable": true,
+          "visible": false,
+          "required": true,
+          "description": "Specify the task ID to update the status.",
+          "tooltip": "Specify the task ID to update the status."
+        },
+        {
+          "title": "Status",
+          "name": "status",
+          "type": "select",
+          "visible": false,
+          "editable": true,
+          "required": true,
+          "tooltip": "Specify the status to update the Task.",
+          "description": "Specify the status to update the task. You can choose from pending, failed, completed.",
+          "options": [
+            "completed",
+            "pending",
+            "failed"
           ]
         }
       ]
