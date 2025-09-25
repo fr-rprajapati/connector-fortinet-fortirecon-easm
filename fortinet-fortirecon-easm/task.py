@@ -15,13 +15,12 @@ def create_task(config, params):
     MK = MakeRestApiCall(config=config)
     endpoint = "/security-orchestration/{org_id}/tasks"
     payload = MK.build_payload(params)
-
-    response = MK.make_request(endpoint=endpoint, method="POST", params=payload)
+    response = MK.make_request(endpoint=endpoint, method="POST", data=payload)
     return response
 
 
 def update_task(config, params):
     MK = MakeRestApiCall(config=config)
     endpoint = "/security-orchestration/{org_id}"+"/tasks/{0}".format(params.pop("task_id"))
-    response = MK.make_request(endpoint=endpoint, method="PATCH", params=params)
+    response = MK.make_request(endpoint=endpoint, method="PATCH", data=params)
     return response
