@@ -6,9 +6,9 @@
   "contributor": "Ramkrushna Pathade",
   "cs_approved": true,
   "cs_compatible": true,
-  "version": "1.2.0",
+  "version": "1.1.1",
   "category": "Attack Surface Management",
-  "help_online": "",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.1.0/fortinet-fortirecon-easm/860/fortinet-fortirecon-easm-v1-1-0",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "configuration": {
