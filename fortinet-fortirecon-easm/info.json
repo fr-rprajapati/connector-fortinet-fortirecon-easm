@@ -590,7 +590,9 @@
         "status": "",
         "user_name": "",
         "issue_name_identifier": "",
-        "bucket_id": ""
+        "bucket_id": "",
+        "created_ts": "",
+        "modified_ts": ""
       },
       "parameters": [
         {
@@ -883,7 +885,9 @@
               }
             ],
             "user_action": "",
-            "user_name": ""
+            "user_name": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -978,6 +982,28 @@
           "description": "(Optional) Specify the group ID to filter retrieved results. You can specify multiple group IDs as comma-separated values. It returns results if it matches all of the specified groups, operating as an 'AND filter'."
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -1025,6 +1051,8 @@
               }
             ],
             "id": "",
+            "created_ts": "",
+            "modified_ts": "",
             "tags": [
               {
                 "id": "",
@@ -1148,6 +1176,28 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -1202,6 +1252,8 @@
             "assets_linked_count": "",
             "company_name": "",
             "fgt_metadata": {},
+            "created_ts": "",
+            "modified_ts": "",
             "discovery_path": [
               {
                 "source": "",
@@ -1331,7 +1383,9 @@
                 "name": ""
               }
             ],
-            "technologies": []
+            "technologies": [],
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -1498,6 +1552,28 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -1586,6 +1662,8 @@
             },
             "assets_linked_count": "",
             "issue_count": "",
+            "created_ts": "",
+            "modified_ts": "",
             "discovery_path": [
               {
                 "source": "",
@@ -1722,7 +1800,9 @@
             "cloud_metadata": {},
             "fgt_metadata": {},
             "assets_linked_count": "",
-            "version": ""
+            "version": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ]
       },
@@ -1911,6 +1991,28 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -1964,6 +2066,8 @@
             "assets_linked_count": "",
             "version": "",
             "issue_count": "",
+            "created_ts": "",
+            "modified_ts": "",
             "discovery_path": [
               {
                 "source": "",
@@ -2068,7 +2172,9 @@
                 "name": ""
               }
             ],
-            "version": ""
+            "version": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -2211,6 +2317,28 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -2277,7 +2405,9 @@
                 "target": "",
                 "data_type": ""
               }
-            ]
+            ],
+            "created_ts": "",
+            "modified_ts": ""
           }
         },
         {
@@ -2313,7 +2443,9 @@
                 "data_type": ""
               }
             ],
-            "assets_linked_count": ""
+            "assets_linked_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         }
       ],
@@ -2367,7 +2499,9 @@
             "domain_name": "",
             "fgt_metadata": {},
             "technologies": [],
-            "cloud_metadata": {}
+            "cloud_metadata": {},
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -2544,6 +2678,28 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
           "name": "page",
           "value": 1,
           "title": "Page",
@@ -2602,7 +2758,9 @@
             "target": "",
             "data_type": ""
           }
-        ]
+        ],
+        "created_ts": "",
+        "modified_ts": ""
       },
       "parameters": [
         {
@@ -3215,7 +3373,9 @@
             "provider": "",
             "account_id": "",
             "policy_errors": [],
-            "connection_status": ""
+            "connection_status": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3251,6 +3411,28 @@
             "Failed",
             "Success"
           ]
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3295,7 +3477,9 @@
             "is_ssl": "",
             "verify_ssl": "",
             "policy_errors": [],
-            "connection_status": ""
+            "connection_status": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3316,6 +3500,28 @@
             "Failed",
             "Success"
           ]
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3407,7 +3613,9 @@
           {
             "text": "",
             "user_name": "",
-            "comment_type": ""
+            "comment_type": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3439,6 +3647,28 @@
             "System",
             "User"
           ]
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3479,7 +3709,9 @@
           {
             "text": "",
             "user_name": "",
-            "comment_type": ""
+            "comment_type": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3510,6 +3742,28 @@
             "System",
             "User"
           ]
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3552,7 +3806,9 @@
             "name": "",
             "scope": "",
             "description": "",
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3583,6 +3839,28 @@
           "required": false,
           "tooltip": "Specify the name of tag which you want to retrieve. Name are matched partially.",
           "description": "(Optional) Specify the name of tag to retrieve. Names are matched partially."
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3627,7 +3905,9 @@
             "scope": "",
             "description": "",
             "linked_assets": [],
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         },
         {
@@ -3637,7 +3917,9 @@
             "name": "",
             "scope": "",
             "description": "",
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         }
       ],
@@ -3681,7 +3963,9 @@
             "name": "",
             "scope": "",
             "description": "",
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         ],
         "page": "",
@@ -3712,6 +3996,28 @@
           "required": false,
           "tooltip": "Specify the name of group which you want to retrieve. Name are matched partially.",
           "description": "(Optional) Specify the name of group which you want to retrieve. Name are matched partially."
+        },
+        {
+          "title": "Create timestamp",
+          "name": "created_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+        },
+        {
+          "title": "Modified timestamp",
+          "name": "modified_ts",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
+          "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
+          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3756,7 +4062,9 @@
             "scope": "",
             "description": "",
             "linked_assets": [],
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         },
         {
@@ -3766,7 +4074,9 @@
             "name": "",
             "scope": "",
             "description": "",
-            "linked_assets_count": ""
+            "linked_assets_count": "",
+            "created_ts": "",
+            "modified_ts": ""
           }
         }
       ],
