@@ -1,15 +1,15 @@
 [
   {
-    "event_id": "FR.BP.DT.Create",
-    "name": "New BP Domain Threat",
-    "description": "Run template on new DT creation",
+    "event_id": "New.Security.Issue",
+    "name": "New Security Issue",
+    "description": "New EASM security Issue",
     "type": [
       "PUSH"
     ],
     "connector_name": "fortinet-fortirecon-easm",
-    "connector_label": " fortinet-fortirecon-easm",
+    "connector_label": "EASM",
     "connector_version": "1.2.0",
-    "connector_action": "get_domains",
+    "connector_action": null,
     "connector_action_inputs": {},
     "connector_icon": null,
     "connector_mapping": {},
@@ -20,17 +20,47 @@
     "poll": null,
     "sample_data": [
       {
-        "url": "https://acmedemo55.com/login.html",
+        "port": "",
         "tags": [
-          "phishing",
-          "typosquatting",
-          "brand_mpersonation",
-          "mx_record"
+          {
+            "id": "",
+            "name": "Oracle",
+            "scope": "system",
+            "color_code": "3392ff"
+          }
         ],
-        "domain": "acmedemo55.com",
-        "source_name": "Customer Input",
-        "original_domain": "acmedemo.com",
-        "notable_change_ts": "2025-25-09T00:00:00"
+        "asset": "190.0.0.1",
+        "bucket": "Reputation",
+        "groups": [
+          {
+            "id": "",
+            "name": "Oracle",
+            "scope": "system",
+            "color_code": "3392ff"
+          }
+        ],
+        "status": "active",
+        "country": "CO",
+        "severity": "low",
+        "bucket_id": "reputation",
+        "rule_tags": [],
+        "asset_name": "152.67.2.62",
+        "asset_type": "ip_address",
+        "created_ts": "2023-08-09T11:23:34.534000",
+        "issue_data": [
+          {
+            "port": 443,
+            "issue_result": "some result description"
+          }
+        ],
+        "issue_name": "IP found in Blacklist Dataset",
+        "modified_ts": "2023-08-09T11:23:34.534000",
+        "recon_score": 11,
+        "issue_bucket": "Vulnerable Software",
+        "issue_status": "active",
+        "nvd_severity": "high",
+        "recon_severity": "",
+        "issue_name_identifier": "ip_blacklist"
       }
     ],
     "schedule": null,
