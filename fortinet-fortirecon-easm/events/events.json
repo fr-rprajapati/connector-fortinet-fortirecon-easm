@@ -9,7 +9,7 @@
     "connector_name": "fortinet-fortirecon-easm",
     "connector_label": "EASM",
     "connector_version": "1.1.1",
-    "connector_action": null,
+    "connector_action": "get_security_insights",
     "connector_action_inputs": {},
     "connector_icon": null,
     "connector_mapping": {},
