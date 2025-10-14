@@ -1,0 +1,45 @@
+[
+  {
+    "event_id": "FR.BP.DT.Create",
+    "name": "New BP Domain Threat",
+    "description": "Run template on new DT creation",
+    "type": [
+      "PUSH"
+    ],
+    "connector_name": "fortinet-fortirecon-easm",
+    "connector_label": " fortinet-fortirecon-easm",
+    "connector_version": "1.2.0",
+    "connector_action": "get_domains",
+    "connector_action_inputs": {},
+    "connector_icon": null,
+    "connector_mapping": {},
+    "trigger_condition": {
+      "logic": "AND",
+      "filters": []
+    },
+    "poll": null,
+    "sample_data": [
+      {
+        "url": "https://acmedemo55.com/login.html",
+        "tags": [
+          "phishing",
+          "typosquatting",
+          "brand_mpersonation",
+          "mx_record"
+        ],
+        "domain": "acmedemo55.com",
+        "source_name": "Customer Input",
+        "original_domain": "acmedemo.com",
+        "notable_change_ts": "2025-25-09T00:00:00"
+      }
+    ],
+    "schedule": null,
+    "batch_preference": 0,
+    "start_time": null,
+    "tag": null,
+    "installed_by": "SOLUTION_PACK",
+    "default": true,
+    "createUser": null,
+    "modifyUser": null
+  }
+]
