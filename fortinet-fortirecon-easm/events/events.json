@@ -1,8 +1,8 @@
 [
   {
-    "event_id": "New.Security.Issue",
-    "name": "New Security Issue",
-    "description": "New EASM security Issue",
+    "event_id": "FR.EASM.SI.Create",
+    "name": "EASM New Security Issue",
+    "description": "New security Issue in FortiRecon EASM.",
     "type": [
       "PUSH"
     ],
@@ -15,13 +15,7 @@
     "connector_mapping": {},
     "trigger_condition": {
       "logic": "AND",
-      "filters": [
-        {
-          "operator": "in",
-          "field": "tags",
-          "value": "EASM-Issue"
-        }
-      ]
+      "filters": []
     },
     "poll": null,
     "sample_data": [
