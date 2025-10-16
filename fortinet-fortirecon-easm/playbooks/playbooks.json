@@ -48,7 +48,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_leaked_credentials",
                 "operationTitle": "Get Leaked Credentials"
@@ -121,7 +121,7 @@
                   "groups_in": "",
                   "groups_match_all": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_scan_statistics",
                 "operationTitle": "Get Scan Statistics"
@@ -205,7 +205,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_issues_discovered",
                 "operationTitle": "Get Issues Discovered"
@@ -275,7 +275,7 @@
                 "params": {
                   "issue_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_issue_by_id",
                 "operationTitle": "Get Issue By ID"
@@ -349,7 +349,7 @@
                   "groups_match_all": "",
                   "after_primary_scan": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_issue_summary",
                 "operationTitle": "Get Issue Summary"
@@ -427,7 +427,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_archived_issues",
                 "operationTitle": "Get Archived Issues"
@@ -505,7 +505,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_archived_assets",
                 "operationTitle": "Get Archived Assets"
@@ -585,7 +585,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_asset_asns",
                 "operationTitle": "Get Asset ASNs"
@@ -656,7 +656,7 @@
                   "asset_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_asns_by_asset_id",
                 "operationTitle": "Get ASNs by Asset ID"
@@ -740,7 +740,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_domains",
                 "operationTitle": "Get Domains"
@@ -811,7 +811,7 @@
                   "asset_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_domain_by_asset_id",
                 "operationTitle": "Get Domain by Asset ID"
@@ -897,7 +897,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_ips",
                 "operationTitle": "Get IPs"
@@ -968,7 +968,7 @@
                   "asset_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_ips_by_asset_id",
                 "operationTitle": "Get IP by Asset ID"
@@ -1050,7 +1050,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_prefixes",
                 "operationTitle": "Get Prefixes"
@@ -1121,7 +1121,7 @@
                   "asset_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_prefixes_by_asset_id",
                 "operationTitle": "Get Prefixes by Asset ID"
@@ -1206,7 +1206,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_subdomains",
                 "operationTitle": "Get Subdomains"
@@ -1276,7 +1276,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_subdomain_by_asset_id",
                 "operationTitle": "Get Subdomain by Asset ID"
@@ -1353,7 +1353,7 @@
                   "groups_match_all": "",
                   "after_primary_scan": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_asset_statistics",
                 "operationTitle": "Get Asset Statistics"
@@ -1428,7 +1428,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_breaches",
                 "operationTitle": "Get Breaches"
@@ -1498,7 +1498,7 @@
                 "params": {
                   "breach_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_breaches_by_id",
                 "operationTitle": "Get Breaches by ID"
@@ -1571,7 +1571,7 @@
                   "groups_in": "",
                   "groups_match_all": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "generate_report",
                 "operationTitle": "Generate Report"
@@ -1642,7 +1642,7 @@
                   "report_id": "",
                   "get_link": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_report",
                 "operationTitle": "Get Report"
@@ -1720,7 +1720,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_exposed_services",
                 "operationTitle": "Get Exposed Services"
@@ -1793,7 +1793,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_cloud_integrations",
                 "operationTitle": "Get Cloud Integrations"
@@ -1865,7 +1865,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_fgt_integrations",
                 "operationTitle": "Get FortiGate Integrations"
@@ -1935,7 +1935,7 @@
                 "params": {
                   "domain": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_security_insights",
                 "operationTitle": "Get Security Insights"
@@ -2008,7 +2008,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_archived_issue_comments",
                 "operationTitle": "Get Archived Issue Comments"
@@ -2081,7 +2081,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_issue_comments",
                 "operationTitle": "Get Issue Comments"
@@ -2154,7 +2154,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_tags",
                 "operationTitle": "Get Tags"
@@ -2225,7 +2225,7 @@
                   "tag_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_tag_by_id",
                 "operationTitle": "Get Tag Details"
@@ -2298,7 +2298,7 @@
                   "page": 1,
                   "size": 10
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_groups",
                 "operationTitle": "Get Groups"
@@ -2369,7 +2369,7 @@
                   "group_id": "",
                   "linked_assets": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "get_group_by_id",
                 "operationTitle": "Get Group Details"
@@ -2439,7 +2439,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_archived_asset",
                 "operationTitle": "Update Archived Asset"
@@ -2509,7 +2509,7 @@
                 "params": {
                   "issue_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_archived_issue",
                 "operationTitle": "Mark Archived Issue as Active"
@@ -2580,7 +2580,7 @@
                   "issue_id": "",
                   "status": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_issue_status",
                 "operationTitle": "Update Issue Status"
@@ -2650,7 +2650,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_asn_asset_status_to_false_positive",
                 "operationTitle": "Update ASN Asset To False Positive"
@@ -2720,7 +2720,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_prefix_asset_status_to_false_positive",
                 "operationTitle": "Update IP Prefix Asset To False Positive"
@@ -2790,7 +2790,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_ip_asset_status_to_false_positive",
                 "operationTitle": "Update IP Asset To False Positive"
@@ -2860,7 +2860,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_domain_asset_status_to_false_positive",
                 "operationTitle": "Update Domain Asset To False Positive"
@@ -2930,7 +2930,7 @@
                 "params": {
                   "asset_id": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_subdomain_asset_status_to_false_positive",
                 "operationTitle": "Update Sub-Domain Asset To False Positive"
@@ -3001,7 +3001,7 @@
                   "leaked_cred_id": "",
                   "status": ""
                 },
-                "version": "1.1.1",
+                "version": "1.1.2",
                 "connector": "fortinet-fortirecon-easm",
                 "operation": "update_leaked_credential_status",
                 "operationTitle": "Update Leaked Credential Status"
@@ -3038,7 +3038,7 @@
           ]
         }
       ],
-      "name": "Sample - Fortinet FortiRecon EASM - 1.1.1",
+      "name": "Sample - Fortinet FortiRecon EASM - 1.1.2",
       "description": "FortiRecon is a Digital Risk Protection Service (DRPS) product that provides an outside-the-network view to the risks posed to your enterprise.",
       "visible": true,
       "recordTags": [
