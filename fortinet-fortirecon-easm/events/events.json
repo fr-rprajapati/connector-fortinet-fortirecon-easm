@@ -1,0 +1,65 @@
+[
+  {
+    "event_id": "FR.EASM.SI.Create",
+    "name": "EASM New Security Issue",
+    "description": "New security Issue in FortiRecon EASM.",
+    "type": [
+      "PUSH"
+    ],
+    "connector_name": "fortinet-fortirecon-easm",
+    "connector_label": "EASM",
+    "connector_version": "1.1.2",
+    "connector_action": null,
+    "connector_action_inputs": {},
+    "connector_icon": null,
+    "connector_mapping": {},
+    "trigger_condition": {
+      "logic": "AND",
+      "filters": []
+    },
+    "poll": null,
+    "sample_data": [
+      {
+        "port": "",
+        "tags": [
+          "Oracle"
+        ],
+        "asset": "127.0.0.1",
+        "bucket": "Bucket",
+        "groups": [
+          "Oracle"
+        ],
+        "status": "active",
+        "country": "CO",
+        "severity": "low",
+        "bucket_id": "bucket_id",
+        "rule_tags": [],
+        "asset_name": "127.0.0.1",
+        "asset_type": "ip_address",
+        "created_ts": "2000-01-01T01:01:00.100000",
+        "issue_data": [
+          {
+            "port": 443,
+            "issue_result": "some result description"
+          }
+        ],
+        "issue_name": "IP found in Blacklist Dataset",
+        "modified_ts": "2000-01-01T01:01:00.100000",
+        "recon_score": 11,
+        "issue_bucket": "Vulnerable Software",
+        "issue_status": "active",
+        "nvd_severity": "high",
+        "recon_severity": "",
+        "issue_name_identifier": "ip_blacklist"
+      }
+    ],
+    "schedule": null,
+    "batch_preference": 0,
+    "start_time": null,
+    "tag": null,
+    "installed_by": "SOLUTION_PACK",
+    "default": true,
+    "createUser": null,
+    "modifyUser": null
+  }
+]
