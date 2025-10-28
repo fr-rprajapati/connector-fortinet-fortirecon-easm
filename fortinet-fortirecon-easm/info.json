@@ -519,7 +519,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`) "
         },
         {
           "title": "Modified timestamp",
