@@ -315,6 +315,8 @@
             "asset_type": "",
             "country": "",
             "severity": "",
+            "nvd_severity": "",
+            "recon_severity": "",
             "port": "",
             "bucket": "",
             "status": "",
@@ -360,6 +362,38 @@
             "High",
             "Medium",
             "Low"
+          ]
+        },
+        {
+          "name": "nvd_severity",
+          "title": "NVD Severity",
+          "type": "select",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "tooltip": "Select the nvd severity to filter the results.",
+          "description": "(Optional) Select the nvd severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "options": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        {
+          "name": "recon_severity",
+          "title": "Recon Severity",
+          "type": "select",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "tooltip": "Select the recon severity to filter the results.",
+          "description": "(Optional) Select the recon severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "options": [
+            "critical",
+            "high",
+            "medium",
+            "low"
           ]
         },
         {
@@ -585,6 +619,8 @@
         "asset_type": "",
         "country": "",
         "severity": "",
+        "nvd_severity": "",
+        "recon_severity": "",
         "port": "",
         "bucket": "",
         "status": "",
