@@ -6,9 +6,9 @@
   "contributor": "Ramkrushna Pathade",
   "cs_approved": true,
   "cs_compatible": true,
-  "version": "1.1.2",
+  "version": "1.2.0",
   "category": "Attack Surface Management",
-  "help_online": "https://docs.fortinet.com/document/fortisoar/1.1.0/fortinet-fortirecon-easm/860/fortinet-fortirecon-easm-v1-1-0",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.2.0/fortinet-fortirecon-easm/1084/fortinet-fortirecon-easm-v1-2-0",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "configuration": {
@@ -172,7 +172,6 @@
           "tooltip": "Specify the end date to filter the credential leak discovery date. Parameter start_date is mandatory parameter if end_date is given. The default is the current day's date.",
           "description": "(Optional) Specify the end date to filter the credential leak discovery date. Parameter start_date is mandatory parameter if end_date is given. The default is the current day's date."
         },
-
         {
           "name": "page",
           "value": 1,
@@ -504,8 +503,7 @@
           "required": false,
           "tooltip": "Select whether to fetch results for items created before or after the primary scan.",
           "description": "(Optional) Select whether to fetch results for items created before or after the primary scan. You can choose from following options: True: Select this option to fetch results for items created after the primary scan. False: Select this option to fetch results for items created before the primary scan.",
-          "options":
-          [
+          "options": [
             "True",
             "False"
           ]
@@ -3798,7 +3796,7 @@
       "operation": "update_archived_asset",
       "title": "Update Archived Asset",
       "annotation": "update_archived_asset",
-      "description": "Update the given asset ID status to active. It removes the given asset from archived assets but its linked assets will still be there in the archived.Asset will be shown on the profile settings seeds section immediately. However, asset will get scanned again within 24 hours and will be shown on the active assets, if any issues found during scan those will be shown on the issues page.",
+      "description": "Updates a specific asset's status to 'Active' based on the asset ID specified. This action removes the specified asset from archived assets; however, its linked assets remain in the archive. The asset will be shown immediately in the profile settings 'seed' section. However, the asset gets scanned again within 24 hours and will then be shown in active assets. If any issues are found during the scan, they are shown on the issues page.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3814,8 +3812,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the archived asset ID to update the status to active.",
-          "tooltip": "Specify the archived asset ID to update the status to active."
+          "description": "Specify the ID of the archived asset you want to update to 'Active'.",
+          "tooltip": "Specify the ID of the archived asset you want to update to 'Active'."
         }
       ]
     },
@@ -3823,7 +3821,7 @@
       "operation": "update_archived_issue",
       "title": "Mark Archived Issue as Active",
       "annotation": "update_archived_issue",
-      "description": "Updates the status of the archived security issue record to active.",
+      "description": "Updates the status of a specific archived security issue record to 'Active' based on the issue ID specified.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3839,8 +3837,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the archived issue ID to update the status to active.",
-          "tooltip": "Specify the archived issue ID to update the status to active."
+          "description": "Specify the ID of the archived issue you want to update to 'Active'.",
+          "tooltip": "Specify the ID of the archived issue you want to update to 'Active'."
         }
       ]
     },
@@ -3848,7 +3846,7 @@
       "operation": "update_issue_status",
       "title": "Update Issue Status",
       "annotation": "update_issue_status",
-      "description": "Updates the status of the Security issue record.\n If the given issue status is set to false_positive or risk_accepted then issue will be visible in the archived issues. You can choose from ACTIVE, RESOLVED, FALSE_POSITIVE, RISK_ACCEPTED.",
+      "description": "Updates the status of a specific security issue record based on the security issue ID specified. If the specified issue status is updated to false_positive or risk_accepted, it will appear in the archived issues.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3864,8 +3862,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the security issue ID to update the status.",
-          "tooltip": "Specify the security issue ID to update the status."
+          "description": "Specify the ID of the security issue you want to update.",
+          "tooltip": "Specify the ID of the security issue you want to update."
         },
         {
           "title": "Status",
@@ -3874,8 +3872,8 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "Specify the status to update the security issue.",
-          "description": "Specify the status to update the security issue. You can choose from ACTIVE, RESOLVED, FALSE_POSITIVE, RISK_ACCEPTED.",
+          "tooltip": "Select the status to which you want to update the specified security issue. You can choose from the following options: ACTIVE, RESOLVED, FALSE_POSITIVE, or RISK_ACCEPTED.",
+          "description": "Select the status to which you want to update the specified security issue. You can choose from the following options: ACTIVE, RESOLVED, FALSE_POSITIVE, or RISK_ACCEPTED.",
           "options": [
             "ACTIVE",
             "RESOLVED",
@@ -3889,7 +3887,7 @@
       "operation": "update_asn_asset_status_to_false_positive",
       "title": "Update ASN Asset To False Positive",
       "annotation": "update_asn_asset_status_to_false_positive",
-      "description": "This API endpoint mark the given asset ID as false positive,\n it will also mark all its linked assets to false positive. \n Once assets are marked as false positive then those will be visible in the archived assets.\n All the issues which are found on the given asset will also get removed/deleted from the issues.",
+      "description": "Marks a specific ASN asset as a false positive based on the asset ID specified. This action also marks the specified ASN asset's linked assets as false positives. Once marked, these assets will appear in the archived assets. All issues associated with the specified ASN asset will be removed.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3905,8 +3903,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the ASN asset ID to update it to False Positive.",
-          "tooltip": "Specify the ASN asset ID to update it to False Positive."
+          "description": "Specify the ID of the ASN asset you want to update to 'False Positive'.",
+          "tooltip": "Specify the ID of the ASN asset you want to update to 'False Positive'."
         }
       ]
     },
@@ -3914,7 +3912,7 @@
       "operation": "update_prefix_asset_status_to_false_positive",
       "title": "Update IP Prefix Asset To False Positive",
       "annotation": "update_prefix_asset_status_to_false_positive",
-      "description": "This API endpoint mark the given asset ID as false positive,\n it will also mark all its linked assets to false positive. \n Once assets are marked as false positive then those will be visible in the archived assets.\n All the issues which are found on the given asset will also get removed/deleted from the issues.",
+      "description": "Marks a specific IP Prefix asset as a false positive based on the asset ID specified. This action also marks the specified IP Prefix asset's linked assets as false positives. Once marked, these assets will appear in the archived assets. All issues associated with the specified IP Prefix asset are also removed.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3930,8 +3928,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the Prefix asset ID to update it to False Positive.",
-          "tooltip": "Specify the Prefix asset ID to update it to False Positive."
+          "description": "Specify the ID of the IP Prefix asset you want to update to 'False Positive'.",
+          "tooltip": "Specify the ID of the IP Prefix asset you want to update to 'False Positive'."
         }
       ]
     },
@@ -3939,7 +3937,7 @@
       "operation": "update_ip_asset_status_to_false_positive",
       "title": "Update IP Asset To False Positive",
       "annotation": "update_ip_asset_status_to_false_positive",
-      "description": "This API endpoint mark the given asset ID as false positive,\n it will also mark all its linked assets to false positive. \n Once assets are marked as false positive then those will be visible in the archived assets.\n All the issues which are found on the given asset will also get removed/deleted from the issues.",
+      "description": "Marks a specific IP asset as a false positive based on the asset ID specified. This action also marks the specified IP asset's linked assets as false positives. Once marked, these assets will appear in the archived assets. All issues associated with the specified IP asset are also removed.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3955,8 +3953,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the IP asset ID to update it to False Positive.",
-          "tooltip": "Specify the IP asset ID to update it to False Positive."
+          "description": "Specify the ID of the IP asset you want to update to 'False Positive'.",
+          "tooltip": "Specify the ID of the IP asset you want to update to 'False Positive'."
         }
       ]
     },
@@ -3964,7 +3962,7 @@
       "operation": "update_domain_asset_status_to_false_positive",
       "title": "Update Domain Asset To False Positive",
       "annotation": "update_domain_asset_status_to_false_positive",
-      "description": "This API endpoint mark the given asset ID as false positive,\n it will also mark all its linked assets to false positive. \n Once assets are marked as false positive then those will be visible in the archived assets.\n All the issues which are found on the given asset will also get removed/deleted from the issues.",
+      "description": "Marks a specific domain asset as a false positive based on the asset ID specified. This action also marks the specified domain asset's linked assets as false positives. Once marked, these assets will appear in the archived assets. All issues associated with the specified domain asset are also removed.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -3980,8 +3978,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the Domain asset ID to update it to False Positive.",
-          "tooltip": "Specify the Domain asset ID to update it to False Positive."
+          "description": "Specify the ID of the domain asset you want to update to 'False Positive'.",
+          "tooltip": "Specify the ID of the domain asset you want to update to 'False Positive'."
         }
       ]
     },
@@ -3989,7 +3987,7 @@
       "operation": "update_subdomain_asset_status_to_false_positive",
       "title": "Update Sub-Domain Asset To False Positive",
       "annotation": "update_subdomain_asset_status_to_false_positive",
-      "description": "This API endpoint mark the given asset ID as false positive,\n it will also mark all its linked assets to false positive. \n Once assets are marked as false positive then those will be visible in the archived assets.\n All the issues which are found on the given asset will also get removed/deleted from the issues.",
+      "description": "Marks a specific subdomain asset as a false positive based on the asset ID specified. This action also marks the specified subdomain asset's linked assets as false positives. Once marked, these assets will appear in the archived assets. All issues associated with the specified subdomain asset are also removed.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -4005,8 +4003,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the Sub-Domain asset ID to update it to False Positive. This operation on same asset_id is not allowed.",
-          "tooltip": "Specify the Sub-Domain asset ID to update it to False Positive. This operation on same asset_id is not allowed."
+          "description": "Specify the ID of the subdomain asset you want to update to 'False Positive'. Note: This operation is not allowed on the same asset_id.",
+          "tooltip": "Specify the ID of the subdomain asset you want to update to 'False Positive'. Note: This operation is not allowed on the same asset_id."
         }
       ]
     },
@@ -4014,7 +4012,7 @@
       "operation": "update_leaked_credential_status",
       "title": "Update Leaked Credential Status",
       "annotation": "update_leaked_credential_status",
-      "description": "Updates the status of the Leaked Credential record.",
+      "description": "Updates the status of a specific leaked credential record to Active or Resolved, based on the leaked credential ID specified.",
       "category": "investigation",
       "is_config_required": true,
       "visible": true,
@@ -4030,8 +4028,8 @@
           "editable": true,
           "visible": true,
           "required": true,
-          "description": "Specify the Leaked Credential ID to update the status.",
-          "tooltip": "Specify the Leaked Credential ID to update the status."
+          "description": "Specify the ID of the leaked credential you want to update.",
+          "tooltip": "Specify the ID of the leaked credential you want to update."
         },
         {
           "title": "Status",
@@ -4040,8 +4038,8 @@
           "visible": true,
           "editable": true,
           "required": true,
-          "tooltip": "Specify the status to update the Leaked Credential.",
-          "description": "Specify the status to update the Leaked Credential. You can choose from ACTIVE, RESOLVED.",
+          "tooltip": "Select the status to which you want to update the specified leaked credential. You can choose either ACTIVE or RESOLVED.",
+          "description": "Select the status to which you want to update the specified leaked credential. You can choose either ACTIVE or RESOLVED.",
           "options": [
             "ACTIVE",
             "RESOLVED"
