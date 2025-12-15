@@ -77,7 +77,8 @@
             "breach_id": "",
             "breach_date": "",
             "breach_name": "",
-            "has_password": ""
+            "has_password": "",
+            "plaintext_passwords": []
           }
         ]
       },
@@ -150,6 +151,20 @@
           "options": [
             "True",
             "False"
+          ]
+        },
+        {
+          "name": "show_plaintext_password",
+          "title": "Show plaintext password",
+          "type": "select",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "tooltip": "Select true if plaintext password needs to show in response. Default is false.",
+          "description": "(Optional) Select true if plaintext password needs to show in response.",
+          "options": [
+            "false",
+            "true"
           ]
         },
         {
