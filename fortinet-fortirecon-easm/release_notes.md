@@ -1,16 +1,21 @@
 #### The following enhancements have been made to the Fortinet FortiRecon EASM Connector in version 1.2.0:
 
-- Added the following new actions and playbooks:
-
-    - Mark Archived Issue as Active
-    - Update Issue Status
-    - Update Archived Asset
-    - Update ASN Asset To False Positive
-    - Update IP Prefix Asset To False Positive
-    - Update IP Asset To False Positive
-    - Update Domain Asset To False Positive
-    - Update Sub-Domain Asset To False Positive
-    - Update Leaked Credential Status
-- Updated output schemas of `Get Domains` and `Get Breaches by ID` actions.
-- Support for notifications from FortiSOAR SaaS to client servers enabling clients to
-  take appropriate actions.
+- Update the following actions in playbooks:
+    - Added new query param `show_plaintext_password` in Get Leaked Credentials action
+    - Added new query param and output schema for fields `recon_severity` and `nvd_severity` in Get Issues Discovered action.
+    - Added daterange filter `created_ts` and `modified_ts` for below actions-
+      - Get Issues Discovered
+      - Get Archived Issues
+      - Get Ips
+      - Get Domains
+      - Get Subdomains
+      - Get Prefixes
+      - Get Asset Asns
+      - Get Exposed Services
+      - Get Archived Assets
+      - Get Cloud Integrations
+      - Get Fgt Integrations
+      - Get Archived Issue Comments
+      - Get Issue Comments
+      - Get Tags
+      - Get Groups
