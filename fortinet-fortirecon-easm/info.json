@@ -155,7 +155,7 @@
         },
         {
           "name": "show_plaintext_password",
-          "title": "Show plaintext password",
+          "title": "Show Plaintext Password",
           "type": "select",
           "editable": true,
           "visible": true,
@@ -388,10 +388,10 @@
           "tooltip": "Select the nvd severity to filter the results.",
           "description": "(Optional) Select the nvd severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
           "options": [
-            "critical",
-            "high",
-            "medium",
-            "low"
+            "Critical",
+            "High",
+            "Medium",
+            "Low"
           ]
         },
         {
@@ -404,10 +404,10 @@
           "tooltip": "Select the recon severity to filter the results.",
           "description": "(Optional) Select the recon severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
           "options": [
-            "critical",
-            "high",
-            "medium",
-            "low"
+            "Critical",
+            "High",
+            "Medium",
+            "Low"
           ]
         },
         {
@@ -558,7 +558,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -569,7 +569,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`) "
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -860,7 +860,7 @@
           "description": "(Optional) Specify the group ID to filter retrieved results. You can specify multiple group IDs as comma-separated values. It returns results if it matches all of the specified groups, operating as an 'AND filter'."
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -871,7 +871,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -1031,7 +1031,7 @@
           "description": "(Optional) Specify the group ID to filter retrieved results. You can specify multiple group IDs as comma-separated values. It returns results if it matches all of the specified groups, operating as an 'AND filter'."
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -1042,7 +1042,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -1225,7 +1225,7 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -1236,7 +1236,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -1601,7 +1601,7 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -1612,7 +1612,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -2040,7 +2040,7 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -2051,7 +2051,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -2366,7 +2366,7 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -2377,7 +2377,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -2727,7 +2727,7 @@
           "description": "(Optional) Specify the cloud metadata in JSON format to filter the results. Available fields are: integration_id, cloud_provider, account_id, resource_id, resource_group, resource_name, resource_type, region, and subscription_id. For example: { \"cloud_provider\": [ \"azure\" ], \"region\": [ \"westus2\" ], \"integration_id\": [ \"777408f550e5rrdd1hjf3w90\" ], \"resource_name\": [ \"TestAssetsPublic\" ] }"
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -2738,7 +2738,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3360,7 +3360,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3371,7 +3371,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3462,7 +3462,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3473,7 +3473,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3551,7 +3551,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3562,7 +3562,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3698,7 +3698,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3709,7 +3709,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3793,7 +3793,7 @@
           ]
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3804,7 +3804,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -3890,7 +3890,7 @@
           "description": "(Optional) Specify the name of tag to retrieve. Names are matched partially."
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -3901,7 +3901,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
@@ -4047,7 +4047,7 @@
           "description": "(Optional) Specify the name of group which you want to retrieve. Name are matched partially."
         },
         {
-          "title": "Create timestamp",
+          "title": "Created Time",
           "name": "created_ts",
           "type": "text",
           "visible": true,
@@ -4058,7 +4058,7 @@
           "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
-          "title": "Modified timestamp",
+          "title": "Modified Time",
           "name": "modified_ts",
           "type": "text",
           "visible": true,
