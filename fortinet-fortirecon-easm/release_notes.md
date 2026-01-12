@@ -1,21 +1,20 @@
-#### The following enhancements have been made to the Fortinet FortiRecon EASM Connector in version 1.2.0:
+#### The following enhancements have been made to the Fortinet FortiRecon EASM Connector in version 1.2.1:
 
-- Update the following actions in playbooks:
-    - Added new query param `Show Plaintext Password` in Get Leaked Credentials action
-    - Added new query param and output schema for fields `Recon Severity` and `NVD Severity` in Get Issues Discovered action.
-    - Added daterange filter `Created Time` and `Modified Time` for below actions-
-      - Get Issues Discovered
-      - Get Archived Issues
-      - Get Ips
-      - Get Domains
-      - Get Subdomains
-      - Get Prefixes
-      - Get Asset Asns
-      - Get Exposed Services
-      - Get Archived Assets
-      - Get Cloud Integrations
-      - Get Fgt Integrations
-      - Get Archived Issue Comments
-      - Get Issue Comments
-      - Get Tags
-      - Get Groups
+- Added new query parameter `Show Plaintext Password` in `Get Leaked Credentials` action
+- Added new query parameter and output schema for fields `Recon Severity` and `NVD Severity` in `Get Issues Discovered` action.
+- Added date-range filters for `Created Time` and `Modified Time`, and updated the output schema for the following actions:
+    - Get Issues Discovered
+    - Get Archived Issues
+    - Get IPs
+    - Get Domains
+    - Get Subdomains
+    - Get Prefixes
+    - Get Asset ASNs
+    - Get Exposed Services
+    - Get Archived Assets
+    - Get Cloud Integrations
+    - Get FortiGate Integrations
+    - Get Archived Issue Comments
+    - Get Issue Comments
+    - Get Tags
+    - Get Groups
