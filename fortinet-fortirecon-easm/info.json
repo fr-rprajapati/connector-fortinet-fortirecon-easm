@@ -3328,7 +3328,8 @@
           "editable": true,
           "visible": true,
           "required": false,
-          "tooltip": "Specify the keywords in the service banner, to filter the results, from retrieved exposed services. Note: Please do not use *, it is implicitly added.",
+          "tooltip": "Specify the keywords in the service banner, to filter the results, from retrieved exposed services. Note: Please do not use *, it is implicitly added.  Allowed special characters are [.-/]",
+          "placeholder": "For example: <This is , a banner>, Then Search with: <banner>",
           "description": "(Optional) Specify the keywords in the service banner to filter the retrieved exposed services. NOTE: Do not use *; it is added implicitly."
         },
         {
