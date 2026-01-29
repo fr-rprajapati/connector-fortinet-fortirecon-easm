@@ -1848,6 +1848,7 @@
             "ports": [],
             "cloud_metadata": {},
             "fgt_metadata": {},
+            "discovery_path": [],
             "assets_linked_count": "",
             "version": "",
             "created_ts": "",
@@ -2206,6 +2207,7 @@
             "assets_linked_count": "",
             "company_name": "",
             "fgt_metadata": {},
+            "discovery_path": [],
             "groups": [
               {
                 "id": "",
@@ -2548,6 +2550,7 @@
             "domain_name": "",
             "fgt_metadata": {},
             "technologies": [],
+            "discovery_path": [],
             "cloud_metadata": {},
             "created_ts": "",
             "modified_ts": ""
@@ -3329,7 +3332,7 @@
           "visible": true,
           "required": false,
           "tooltip": "Specify the keywords in the service banner, to filter the results, from retrieved exposed services. Note: Please do not use *, it is implicitly added.  Allowed special characters are [.-/]",
-          "placeholder": "For example: <This is , a banner>, Then Search with: <banner>",
+          "placeholder": "For example: This is , a banner, Then Search with: banner",
           "description": "(Optional) Specify the keywords in the service banner to filter the retrieved exposed services. NOTE: Do not use *; it is added implicitly."
         },
         {
