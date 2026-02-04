@@ -3951,7 +3951,7 @@
       "enabled": true,
       "conditional_output_schema": [
         {
-          "condition": "{{ linked_assets==true }}",
+          "condition": "{{ linked_assets == true }}",
           "output_schema": {
             "id": "",
             "name": "",
