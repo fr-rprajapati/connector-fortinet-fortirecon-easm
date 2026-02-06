@@ -8,7 +8,7 @@
   "cs_compatible": true,
   "version": "1.2.1",
   "category": "Attack Surface Management",
-  "help_online": "",
+  "help_online": "https://docs.fortinet.com/document/fortisoar/1.2.1/fortinet-fortirecon-easm/121/fortinet-fortirecon-easm-v1-2-1",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "configuration": {
@@ -161,7 +161,7 @@
           "visible": true,
           "required": false,
           "tooltip": "Select true if plaintext password needs to show in response. Default is false.",
-          "description": "(Optional) Select true if plaintext password needs to show in response.",
+          "description": "(Optional) Select to show password in plaintext in the response.",
           "options": [
             "false",
             "true"
@@ -385,8 +385,8 @@
           "editable": true,
           "visible": true,
           "required": false,
-          "tooltip": "Select the nvd severity to filter the results.",
-          "description": "(Optional) Select the nvd severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "tooltip": "Select the NVD severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "description": "(Optional) Select the NVD severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
           "options": [
             "Critical",
             "High",
@@ -401,8 +401,8 @@
           "editable": true,
           "visible": true,
           "required": false,
-          "tooltip": "Select the recon severity to filter the results.",
-          "description": "(Optional) Select the recon severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "tooltip": "Select the Recon severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
+          "description": "(Optional) Select the Recon severity to filter the results. You can choose from the following options: Critical, High, Medium or Low",
           "options": [
             "Critical",
             "High",
@@ -566,7 +566,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`) "
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`) "
         },
         {
           "title": "Modified Time",
@@ -577,7 +577,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -868,7 +868,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -879,7 +879,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -1039,7 +1039,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -1050,7 +1050,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -1233,7 +1233,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -1244,7 +1244,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -1609,7 +1609,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -1620,7 +1620,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -2049,7 +2049,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -2060,7 +2060,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -2376,7 +2376,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -2387,7 +2387,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -2738,7 +2738,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -2749,7 +2749,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3372,7 +3372,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3383,7 +3383,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3474,7 +3474,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3485,7 +3485,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3563,7 +3563,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3574,7 +3574,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3710,7 +3710,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3721,7 +3721,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3805,7 +3805,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3816,7 +3816,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -3902,7 +3902,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -3913,7 +3913,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
@@ -4059,7 +4059,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by created_ts datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the created time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "title": "Modified Time",
@@ -4070,7 +4070,7 @@
           "required": false,
           "placeholder": "Format: YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS",
           "tooltip": "Range consists of start_date and end_date separated by `TO`. Both start and end values can be in either date-only or full datetime format.",
-          "description": "Filter by modified datetime range. Accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
+          "description": "(Optional) Specify the time range to filter results based on the modified time. The following are the accepted formats: (`YYYY-MM-DDTHH:MM:SS TO YYYY-MM-DDTHH:MM:SS`), (`YYYY-MM-DD TO YYYY-MM-DD`). Example: (`2022-03-25T09:50:21.770+00:00 TO 2022-03-25T14:24:05.000+00:00`, `2022-03-25TO2022-03-25T14:24:05.000+00:00`, `2022-03-25 TO 2022-03-25`)"
         },
         {
           "name": "page",
