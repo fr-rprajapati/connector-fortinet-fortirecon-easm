@@ -338,7 +338,9 @@
             "issue_name_identifier": "",
             "bucket_id": "",
             "created_ts": "",
-            "modified_ts": ""
+            "modified_ts": "",
+            "os": "",
+            "cpe": []
           }
         ],
         "page": "",
@@ -509,6 +511,17 @@
           "placeholder": "",
           "tooltip": "Specify the tag ID to filter retrieved results. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'.",
           "description": "(Optional) Specify the tag ID to filter retrieved results. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'."
+        },
+        {
+          "title": "Tags Not In",
+          "name": "tags_nin",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "",
+          "tooltip": "Filter with 'Tags not in' which will exclude specified tag id(s) to fetch issues. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'.",
+          "description": "(Optional) Filter with 'Tags not in' which will exclude specified tag id(s) to fetch issues. You can specify multiple tag IDs as comma-separated values. It returns results by excluding specified tags, operating as an 'OR filter'."
         },
         {
           "title": "Tags In (Match All)",
@@ -4552,7 +4565,7 @@
     },
     {
       "operation": "unassign_tag",
-      "title": "Unassign Tag",
+      "title": "UnAssign Tag",
       "annotation": "unassign_tag",
       "description": "Unassign the tag to assets for the specified organisation.",
       "category": "investigation",
