@@ -338,7 +338,9 @@
             "issue_name_identifier": "",
             "bucket_id": "",
             "created_ts": "",
-            "modified_ts": ""
+            "modified_ts": "",
+            "os": "",
+            "cpe": []
           }
         ],
         "page": "",
@@ -509,6 +511,17 @@
           "placeholder": "",
           "tooltip": "Specify the tag ID to filter retrieved results. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'.",
           "description": "(Optional) Specify the tag ID to filter retrieved results. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'."
+        },
+        {
+          "title": "Tags Not In",
+          "name": "tags_nin",
+          "type": "text",
+          "visible": true,
+          "editable": true,
+          "required": false,
+          "placeholder": "",
+          "tooltip": "Filter with 'Tags not in' which will exclude specified tag id(s) to fetch issues. You can specify multiple tag IDs as comma-separated values. It returns results if it matches any of the specified tags, operating as an 'OR filter'.",
+          "description": "(Optional) Filter with 'Tags not in' which will exclude specified tag id(s) to fetch issues. You can specify multiple tag IDs as comma-separated values. It returns results by excluding specified tags, operating as an 'OR filter'."
         },
         {
           "title": "Tags In (Match All)",
@@ -4498,6 +4511,90 @@
             "pending",
             "failed"
           ]
+        }
+      ]
+    },
+    {
+      "operation": "assign_tag",
+      "title": "Assign Tag",
+      "annotation": "assign_tag",
+      "description": "assign the tag to assets for the specified organisation.",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": false,
+      "enabled": true,
+      "output_schema": {
+        "message": ""
+      },
+      "parameters": [
+        {
+          "name": "tag_id",
+          "title": "Tag ID",
+          "type": "text",
+          "editable": true,
+          "visible": false,
+          "required": true,
+          "description": "Specify Tag id which is to assign to assets. Tag must be active. example: 29b3a2143256f4892c69c4affd7b1657",
+          "tooltip": "Specify Tag id which is to assign to assets. Tag must be active. example: 29b3a2143256f4892c69c4affd7b1657"
+        },
+        {
+          "name": "assets",
+          "title": "Assets",
+          "type": "json",
+          "editable": true,
+          "visible": false,
+          "required": true,
+          "description": "Acceptable for assets are: IP_ADDRESS, ASN, IP_PREFIX, DOMAIN, SUB_DOMAIN. Example: [ \"id\": \"29b3a2143256f4892c69c4affd7b1657\", \"type\": \"DOMAIN\" ]",
+          "tooltip": "Specify assets with id and type on which tags will be assigned. Example: [ \"id\": \"29b3a2143256f4892c69c4affd7b1657\", \"type\": \"DOMAIN\" ]"
+        },
+        {
+          "title": "Propagate To Child",
+          "name": "propagate_to_child",
+          "type": "select",
+          "visible": false,
+          "editable": true,
+          "required": false,
+          "tooltip": "If set true, it will assign tag to child assets as well. It might take longer time based on the asset types. Example: if ip_prefixes is assets then same tag will be assigned to ip_addresses, domain and subdomain. Default is false.",
+          "description": "If set true, it will assign tag to child assets as well. It might take longer time based on the asset types. Example: if ip_prefixes is assets then same tag will be assigned to ip_addresses, domain and subdomain.",
+          "options": [
+            false,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "operation": "unassign_tag",
+      "title": "UnAssign Tag",
+      "annotation": "unassign_tag",
+      "description": "Unassign the tag to assets for the specified organisation.",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": false,
+      "enabled": true,
+      "output_schema": {
+        "message": ""
+      },
+      "parameters": [
+        {
+          "name": "tag_id",
+          "title": "Tag ID",
+          "type": "text",
+          "editable": true,
+          "visible": false,
+          "required": true,
+          "description": "Specify Tag id which is to unassign to assets. Tag must be active. example: 29b3a2143256f4892c69c4affd7b1657",
+          "tooltip": "Specify Tag id which is to unassign tag to assets. example: 29b3a2143256f4892c69c4affd7b1657"
+        },
+        {
+          "name": "assets",
+          "title": "Assets",
+          "type": "json",
+          "editable": true,
+          "visible": false,
+          "required": true,
+          "description": "Acceptable for assets are: IP_ADDRESS, ASN, IP_PREFIX, DOMAIN, SUB_DOMAIN. Specify multiple assets if tag need to assigned to multiple assets.",
+          "tooltip": "Specify assets with id and type on which tags will be assigned. Example: [ \"id\": \"29b3a2143256f4892c69c4affd7b1657\", \"type\": \"DOMAIN\" ]"
         }
       ]
     }
