@@ -1434,7 +1434,15 @@
             ],
             "technologies": [],
             "created_ts": "",
-            "modified_ts": ""
+            "modified_ts": "",
+            "discovery_path": [
+              {
+                "from": "",
+                "from_type": "",
+                "module": "",
+                "type": ""
+              }
+            ]
           }
         ],
         "page": "",
@@ -1848,7 +1856,14 @@
             "ports": [],
             "cloud_metadata": {},
             "fgt_metadata": {},
-            "discovery_path": [],
+            "discovery_path": [
+              {
+                "from": ",",
+                "from_type": "",
+                "module": "",
+                "type": ""
+              }
+            ],
             "assets_linked_count": "",
             "version": "",
             "created_ts": "",
@@ -2100,7 +2115,12 @@
         {
           "condition": "{{ linked_assets == false }}",
           "output_schema": {
-            "tags": [],
+            "tags": [
+              {
+                "id": "",
+                "name": ""
+              }
+            ],
             "groups": [
               {
                 "id": "",
@@ -2207,7 +2227,14 @@
             "assets_linked_count": "",
             "company_name": "",
             "fgt_metadata": {},
-            "discovery_path": [],
+            "discovery_path": [
+              {
+                "from": ",",
+                "from_type": "",
+                "module": "",
+                "type": ""
+              }
+            ],
             "groups": [
               {
                 "id": "",
@@ -2545,7 +2572,12 @@
             ],
             "asset": "",
             "ports": [],
-            "groups": [],
+             "groups": [
+              {
+                "id": "",
+                "name": ""
+              }
+            ],
             "ip_address": "",
             "domain_name": "",
             "fgt_metadata": {},
@@ -2795,7 +2827,12 @@
         ],
         "asset": "",
         "ports": [],
-        "groups": [],
+         "groups": [
+          {
+            "id": "",
+            "name": ""
+          }
+        ],
         "ip_address": "",
         "domain_name": "",
         "issue_count": "",
