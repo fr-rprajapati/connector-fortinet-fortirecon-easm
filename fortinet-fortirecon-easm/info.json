@@ -340,7 +340,9 @@
             "created_ts": "",
             "modified_ts": "",
             "os": "",
-            "cpe": []
+            "cpe": [],
+            "nvd_score": "",
+            "recon_score": ""
           }
         ],
         "page": "",
