@@ -12,6 +12,7 @@ from .assets import *
 from .breaches import get_breaches, get_breaches_by_id, get_leaked_credentials, update_leaked_credential_status
 from .reports import generate_report, get_report
 from .task import create_task, update_task
+from .assign_tags import assign_tag, unassign_tag
 
 
 operations = {
@@ -57,5 +58,7 @@ operations = {
     "update_subdomain_asset_status_to_false_positive": update_subdomain_asset_status_to_false_positive,
     "update_leaked_credential_status": update_leaked_credential_status,
     "create_task": create_task,
-    "update_task": update_task
+    "update_task": update_task,
+    "assign_tag": assign_tag,
+    "unassign_tag": unassign_tag
 }
